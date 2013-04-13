@@ -1,0 +1,10 @@
+.post .date {
+  color: #999;
+}
+.post .post-content {
+  margin-top: 1em;
+}
+.post .post-content img {
+  display: block;
+  float: right;
+}
