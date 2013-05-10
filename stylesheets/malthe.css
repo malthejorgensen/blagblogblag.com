@@ -51,3 +51,21 @@ ul.contact-list li.github {
   /* The above is cleaner, but no resizing or positioning */
   background-image: url("../img/GitHub-Mark-32px.png");
 }
+
+footer {
+  bottom: 25px;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer img.me {
+  margin-left: -90px;
+  float: left;
+}
+
+/* Source */
+footer p.source-link {
+  text-align: center;
+}
