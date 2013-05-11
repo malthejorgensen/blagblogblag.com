@@ -42,7 +42,15 @@ ul.contact-list li.twitter {
   /* list-style-image: url("https://twitter.com/images/resources/twitter-bird-16x16.png"); */
 
   /* The above is cleaner, but no resizing or positioning */
-  background-image: url("//twitter.com/images/resources/twitter-bird-16x16.png");
+  /* The URL:
+     //twitter.com/images/resources/twitter-bird-16x16.png
+     should work, but on mobile it redirects to
+     //mobile.twitter.com/images/resources/twitter-bird-16x16.png 
+     so we need the local copy from:
+     https://dev.twitter.com/docs/image-resources */
+  background-image: url("../img/bird_blue_16.png");
+  background-size: 14px 11px; /* Oddly enough the "16x16" twitter bird is
+                                 actually 14x11 */
 }
 ul.contact-list li.github {
   /* https://github.com/logos */
