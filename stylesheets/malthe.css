@@ -60,12 +60,23 @@ footer p {
   margin-bottom: 5px;
 }
 
+/* Me image */
 footer img.me {
   margin-left: -90px;
   float: left;
+  /* margin-left: 0px; */
+  /* float: right; */
+}
+
+@media print, screen and (max-width: 960px) {
+  footer img.me {
+    margin-left: 0px;
+    float: right;
+  }
 }
 
 /* Source */
 footer p.source-link {
   text-align: center;
 }
+
