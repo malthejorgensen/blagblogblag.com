@@ -94,12 +94,19 @@ The cloudControl command-line is based on Heroku's command-line tool and is pret
       <td style="background-color:#FFDADA">Worse</td>
       <td style="background-color:#CFC">Better</td>
     </tr>
+    <tr>
+      <td>Database<sup>3</sup></td>
+      <td style="background-color:#FFDADA">Built-in</td>
+      <td style="background-color:#CFC">N/A - outsourced</td>
+    </tr>
   </tbody>
 </table>
 
-1. `af logs` and `af update` are slower than on most other services but not irritatingly so.
+1. `af logs` and `af update` are slower than on most other services but not irritatingly so. Also, you cannot run Python/Django commands on the server, e.g. `python manage.py syncdb` or `python manage.py migrate` which is a pain (you have to manually do these things).
 
-2. AppFog has no online interface for viewing logs. cloudControl has an online log viewing inferface.
+2. AppFog has no online interface for viewing logs and the command-line logs are slow. cloudControl has an online log viewing inferface and their command-line logs are much faster to access.
+
+3. You cannot setup triggers on the AppFog MySQL database. cloudControl doesn't supply any database themselves but outsources them, for example to ElephantSQL which I found pretty great. Of course you can outsource with AppFog as well, but if they can't supply a great database solution – they shouldn't supply one at all – but rather default to outsourcing like cloudControl.
 
 ## Bottom line
 **cloudControl** is the better service, but their pricing is about double that of **AppFog**. The flaws of AppFog have so far not been deal-breakers for me.
