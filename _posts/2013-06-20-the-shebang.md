@@ -32,6 +32,45 @@ Here `virtualenv` has quoted the path because it has a space in it. But
 this doesn't work on OS X 10.7 (I haven't tested on other systems).
 
 I haven't found a solution yet (working on it).
+The XNU (Mac OS X) kernel code parsing the shebang can be found [here](http://www.opensource.apple.com/source/xnu/xnu-1504.7.4/bsd/kern/kern_exec.c)
+beginning at line 432.
+
+So I wrote a file `test` to check out the behaviour:
+
+    #!/bin/exec-space arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10 arg11 arg12
+
+With `exec-space` being:
+
+    #!/bin/sh
+    echo $0
+    echo $1
+    echo $2
+    echo $3
+    echo $4
+
+Running `./test` in [fish](http://fishshell.com/) gives the following error
+
+    > ./test
+    Failed to execute process './test'. Reason:
+    exec: Exec format error
+    The file './test' is marked as an executable but could not be run by the operating system.
+    
+`bash` does nothing
+
+    > ./test
+    >
+
+`zsh` does something
+
+    > ./test
+    /bin/exec-space
+    arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 a
+    ./test
+    
+The result from `zsh` show that all arguments are concatenated intro `$1`
+but truncated after some number of characters. The morale of the story is
+then to not use `virtualenv` in neither paths containing spaces nor 
+long paths. I guess computer software still lives in 1300 BC...
 
 A guy called Steve Smith found out the same thing a couple of years ago:
 <http://stevesmithbytes.blogspot.com/2011/02/handling-spaces-in-shebang-line-in-mac.html>
