@@ -5,8 +5,9 @@ title: Buying things online (scams)
 
 Long story short: _[bosto-tablet.com] is a great, legimate seller of Bosto
 drawing tablets. I bought a Kingtee 19-mb from the site and it was delivered
-within days of my purchase, and I am very happy with the product. This is the
-story of how I bought it._
+within days of my purchase, and I am very happy with the product. However before
+I bought something off the site I was worried that it was a scam. This is a
+story of worry, research and a leap of faith._
 
 So I was going buy a drawing tablet, like [the ones from Wacom](http://www.wacom.com/products/pen-displays/cintiq/cintiq-13hd).
 After researching a little I found that cheaper alternatives are now available –
