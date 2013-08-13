@@ -9,23 +9,28 @@ within days of my purchase, and I am very happy with the product. However before
 I bought something off the site I was worried that it was a scam. This is a
 story of worry, research and a leap of faith._
 
-So I was going buy a drawing tablet, like [the ones from Wacom](http://www.wacom.com/products/pen-displays/cintiq/cintiq-13hd).
-After researching a little I found that cheaper alternatives are now available –
+So I was planning to buy a drawing tablet, like [the ones from Wacom](http://www.wacom.com/products/pen-displays/cintiq/cintiq-13hd).
+However, after researching a little I found out that today (as opposed to a
+    couple of years ago when I last checked) cheaper are alternatives available –
 possibly because some of Wacom's patents have expired. These alternatives are
 made by two companies called Yiynova and Bosto. After reading some reviews and
-viewing a lot of videos demonstrating these tablets I decided to go for the
+viewing a lot of videos demonstrating the tablets I decided to go for the
 _Bosto kingtee 19-mb_.
 
 But I needed it shipped to Denmark at a reasonable price – so where was I going
-to get that? I found [bosto-tablet.com] which looks quite nice. But the
-site isn't really mentioned anywhere – so how could I know that it was run by
-the manufacturer or a legitimate reseller? That it wasn't a scam?
+to get that? I found [bosto-tablet.com] which looks quite nice. But the site
+isn't really mentioned anywhere on the net – so how could I know that it was run
+by the manufacturer or a legitimate reseller? That it wasn't a scam?
 
-The site has a list of recent customers with date of purchase and model number.
-At the time the table didn't show the DHL tracking as it does now, which makes
-it seem a bit more legit. And if you're already suspicious of the site it comes
-off as baiting device: "_Hey look, we're legit – just go ahead and buy something
-already._"
+The site is very plain, and doesn't really give a lot of information, about who
+runs the shop and where it's located.  The site also has a list of recent
+customers with date of purchase and model number.
+(At the time the table didn't show the DHL tracking as it does now)  
+If you're already suspicious of the site this list comes off as a baiting device,
+as you don't normally see such lists on larger webshops.
+The list is basically yelling: "_Hey look, we're legit – just go ahead and buy
+something already!_", which is coincidentally also what you would want to do if
+you were luring people into a scam.
 
 [bosto-tablet.com]: http://bosto-tablet.com
 
@@ -47,8 +52,11 @@ I got the reply:
 > \-\-  
 > Sincerely yours, Andrey Belkov, Bosto
 
-Now Bosto is a Chinese company, so it was weird that someone with a russian sounding name responded. The response itself is well-written and short, basically what I would expect from a modern web company. Not from a Chinese tablet manufacturer. This well-written short response could just be luring me further into a possible scam…
-
+Now Bosto is a Chinese company, so it was weird that someone with a russian
+sounding name responded. The response itself is well-written and short,
+basically what I would expect from a modern web company. Not from a
+Chinese tablet manufacturer. This well-written short response could
+just be luring me further into a possible scam…
 
 Well, in the end I decided to go for it anyway and I was able to track my
 package via DHL on its 3-day journey from Hong Kong to Copenhagen (Denmark). I
