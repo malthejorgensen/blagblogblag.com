@@ -23,8 +23,17 @@
         <h3>Blags</h3>
         <ul>
           {% for post in site.posts %}
-          <li><a href="#{{ post.title }}">{{ post.title }}</a></li>
+          <li><a href="/#{{ post.title }}">{{ post.title }}</a></li>
           {% endfor %}
+        </ul>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="tools.html">Tools I use</a></li>
+          {% comment %}
+          {% for page in site.pages %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endfor %}
+          {% endcomment %}
         </ul>
       </header>
       {{ content }}

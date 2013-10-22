@@ -7,6 +7,13 @@ It uses the
 
 And is powered by [Jekyll](http://github.com/mojombo/jekyll).
 
+Problems (and solutions)
+------------------------
+I had problems with pages (not posts) not rendering as markdown: turns out you
+need to use `{{ content }}` not `{{ page.content }}` to get rendered markdown.
+
+See: <http://skratchdot.com/2012/05/markdown-not-working-in-jekyll/>
+
 Acknowledgement
 ---------------
 The code and style of this blog was inspired by:
