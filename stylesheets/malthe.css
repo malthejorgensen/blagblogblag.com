@@ -2,7 +2,11 @@
 h1 {
   margin-bottom: 0px;
 }
-h1 a {
+header h1 a {
+  color:#222;
+  font-weight: inherit;
+}
+section h1 a {
   color:#222;
   line-height:1.1;
   font-size:28px;
