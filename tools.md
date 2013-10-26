@@ -30,3 +30,46 @@ but I don't get the interface and you have to host yourself)
 
 [TravisCI]: http://travis-ci.org/
 [Jenkins]: http://jenkins-ci.org/
+
+
+## OS X Utilities
+
+
+### Amethyst
+A tiling window manager like [xmonad] for OS X.
+
+[Link][Amethyst]
+
+_Alternatives_: [xnomad] is the inspiration for Amethyst and the two are very
+similar with Amethyst having more features, [osxmonad] is a wrapper of xmonad
+for OS X.
+
+[Amethyst]: http://ianyh.com/amethyst/
+[osxmonad]: https://github.com/xmonad/osxmonad
+[xnomad]: https://github.com/fjolnir/xnomad
+
+### f.lux
+f.lux alters the colors of your display slighty in the evening (actually checks
+your position, and when the sun goes down and times the dimming with that).
+This helps your internal (biological) clock, so you will get tired at the right
+time. _The standards colours of your computer screen are slightly blue-ish which
+tells your brain that it is daytime, and that you should be awake._
+
+I really like it and I feel like it works but I can't say for sure.
+
+### Caffeine
+Prevents your computer and display from going to sleep (useful for presentations
+and reading)
+
+### ScreenShade
+At first I didn't see the point of programs like _Shades_, because you really
+shouldn't sit in the dark with your computer and never did (back then). But
+sometimes you may, and those times it's nice to have screenshade so your retinas
+don't burn from your bright, bright computer screen.
+
+## SystemRescueCD
+This Bootable Linux CD has saved me time and time again. If you mess up your
+partition table, if your OS is no longer bootable. It has never failed me.
+
+[Link](http://www.sysresccd.org)
+
