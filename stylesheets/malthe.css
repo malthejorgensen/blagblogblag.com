@@ -1,3 +1,16 @@
+/* Lato looks weird on Arch Linux Firefox */
+@import url(http://fonts.googleapis.com/css?family=Roboto|Oxygen|PT+Mono);
+body {
+  font-family: 'Oxygen', Arial, sans-serif;
+  /* font-family: 'Roboto', Arial, sans-serif; */
+}
+
+/* <code> tags was using fonts that I didn't have */
+code {
+  font-family: 'PT Mono', 'Courier New', monospace;
+  background-color: #DDD;
+}
+
 /* Blog post titles */
 h1 {
   margin-bottom: 0px;
