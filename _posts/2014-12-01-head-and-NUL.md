@@ -19,8 +19,9 @@ The "UNIX way" is to do something like:
 
     find . -iname '*_old*' | head -n 5 | xargs rm
 
-... which doesn't work with spaces. Our `-print0` won't work
-because doesn't have the equivalent of the `xargs -0` flag.
+– and now we're back to something that doesn't work with filenames containing spaces.
+Our `-print0`-trick from earlier won't work because `head` doesn't have an equivalent
+of the `xargs -0` flag.
 
 ## `awk` to the rescue?
 _Note_: The following assumes that `awk` refers to BSD-awk -- specifically the `awk` provided
@@ -78,13 +79,13 @@ the "separator" to be something other than newline
 
 ## Afterthought
 I think the UNIX tools are great. No doubt about it. I use them every day, and the
-"do one thing, and do it well" and the composability of pipes what makes them
-invaluable to heaps of programmers, including me.
-BUT the tools _are_ from the 80's and sometimes even older have fallen out of touch
+"do one thing, and do it well"-philosophy plus the composability of tools through pipes
+are some of the things that these tools invaluable to many programmers, including me.
+BUT the tools _are_ from the 80's (and sometimes even older) and have fallen out of touch
 with modern computing. Today the users' needs and behaviour shapes the systems rather
 than the other way around.
 
-We need to built tools that can handle filenames containing spaces and unicode.
+We need to build tools that can handle filenames containing spaces and unicode characters.
 I have an older blog post that touches the same topic: [The Unix shebang (#!)](#The Unix shebang (#!)).
 
 For now I've made a `head` "implementation" for input separated by NULs instead
