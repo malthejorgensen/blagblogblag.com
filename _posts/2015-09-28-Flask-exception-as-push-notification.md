@@ -2,7 +2,7 @@
 layout: post
 title: Flask exception as push notification
 ---
-I'm currently working on a small project, a web service written in Flask.
+I'm currently working on a small project: a web service written in Flask.
 
 The service is currently at an early stage, and still so small that I want
 to be notified of every exception that happens in production.
