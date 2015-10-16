@@ -6,7 +6,7 @@ Today I discovered a new tool: SSL Labs' [SSL test].
 
 It let's you input your domain URL and then checks the security of your SSL configuration
 for known vulnerabilities. After the test it gives you an overall security rating (on the
-US school _A-F_ scale) along with a list of recommended changes to any fix security holes
+US school _A-F_ scale) along with a list of recommended changes to fix any security holes
 and follow best practice.
 
 Testing on peergrade.io I got a horrendous **F**. The SSL proxy is running on an
