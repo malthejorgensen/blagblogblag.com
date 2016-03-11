@@ -1,5 +1,5 @@
 ---
-
+layout: post
 title: Remote debugging with rpdb2
 ---
 
@@ -13,10 +13,11 @@ How do I debug this? As the output gets "eaten" by the pipe, I can't see the
 output from regular-old `pdb` (and won't be able to interact with it
 meaningfully).
 
-_rpdb2 to the rescue!_
+_rpdb2 to the rescue!_ `rpdb2` allows remote debugging -- meaning that you
+can debug from a different process and thus a different terminal window.
 
-`rpdb2` is part of `winpdb` package, so I do the usual `pip install winpdb`. 
-This only got me version 1.3.6, which doesn't work<sup>1</sup> :(
+`rpdb2` is part of `winpdb` package, so I did the usual `pip install winpdb`. 
+This only got me version 1.3.6, however, which doesn't work<sup>1</sup> :(
 
 So I had to use the original tarball:
 
@@ -33,6 +34,13 @@ even though version 1.4.8 seems to be on PyPi?<sup>2</sup>
 * You need to use the `bp` command to set a breakpoint, and the `bl` command to list the set
   breakpoints. The `b` command stops ("breaks") the program immediately, during execution.  
 
+The prompt also doesn't evaluate expressions by default, so you can't do `print local_var`,
+instead you have to do `eval local_var` or `exec print local_var`.  
+`eval` will try to evaluate the expression in the actual debugging prompt (where
+you're writing your commands), whereas `exec` will execute the statement in
+"debuggee" (the process being debugged) and printed output will also appear
+in the "debuggee" terminal window.
+
 Why the author didn't go with the conventions established with `pdb` is beyond me :|
 
 -----
@@ -44,13 +52,13 @@ Before `rdb2` starts, it asks you for a password
     Please type a password:1234
 
 Now I'm back to the same problem `pdb` had! -- this prompt won't be shown to me when I pipe the output.
-Luckily, it always the same prompt, so you can simply type the password after waiting a bit for
+Luckily, it's always the same prompt, so you can simply type the password after waiting a bit for
 `rpdb2` to start:
 
     > rdb2 -d myscript.py | wc -l
     1234
     
-Next thing you need to do is to attach to the process:
+The next thing you need to do is to attach to the process:
 
     > rdb2 -a myscript.py
     A password should be set to secure debugger client-server communication.
@@ -70,9 +78,8 @@ Next thing you need to do is to attach to the process:
 Here you most likely wanna hit `g<ENTER>` unless you wanna set up some breakpoints
 first. That can be done with the `b` command.
 
-Finally I could actually get to my error -- the error was however catched at the very
-top-level of the program, so I had to dig out the traceback of the caught exception
-myself:
+Finally I got to my actual error -- the error was however caught at the very
+top-level of the program, so I had to dig out the traceback of the caught exception:
 
     > exec import traceback
     Textual output will be done at the debuggee.
@@ -83,7 +90,7 @@ myself:
     > exec traceback.print_tb(tb)
     Textual output will be done at the debuggee.
 
-As noted the actual printout has be viewed in the original process.
+As noted the actual printout has to be viewed in the original "debuggee" process.
 
 References:
 
