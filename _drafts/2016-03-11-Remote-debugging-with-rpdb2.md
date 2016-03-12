@@ -13,6 +13,8 @@ How do I debug this? As the output gets "eaten" by the pipe, I can't see the
 output from regular-old `pdb` (and won't be able to interact with it
 meaningfully).
 
+**Update**: I later found out that the easiest way to debug this situation, is `python -u -m pdb myscript.py | cat -u`, leaving you with the normal `pdb` prompt while also having piped output. (the `-u` is for unbuffered output)
+
 _rpdb2 to the rescue!_ `rpdb2` allows remote debugging -- meaning that you
 can debug from a different process and thus a different terminal window.
 
