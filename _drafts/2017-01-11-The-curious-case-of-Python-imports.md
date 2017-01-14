@@ -1,35 +1,49 @@
+---
+published: false
+---
+---
+title: SERVER_NAME, Flask, and Heroku Review apps
+published: false
+---
+
+
 The curious case of Python imports
-=============================
-Let's say you import a package or module in Python
+==================================
+First let's introduce some basic nomenclature – in Python:
 
-    import spam
+* An individual `.py`-file is called a **module**  
+  You can import a module `spam.py` from a module in the same directory with the statement `import spam`.
+* A directory containing an `__init__.py`-file is called a **package**  
+  You can import a package `spam/` from a module in the directory containing the `spam/`-directory with the statement `import spam`.
 
-In a folder with the following files and directories
+The problem
+-----------
+Let's say you have a directory containing the following files and directories
 
+    test.py
     spam.py
     spam/
          __init_.py
 
 (`__init__.py` is in the `spam`-directory)
 
-Here, `import spam` could either refer to either the file `spam.py` or the directory `spam/` with the `__init__.py` file in it.
+And you have
+
+    import spam
+
+in `test.py`.
+
+Here, the imported name `spam` could either refer to either the file `spam.py` or the directory `spam/` with the `__init__.py` file in it.
 
 Which one will be imported?
 
-**tl;dr** The directory `spam` will  be imported.
-
-The basics
----------------
-In Python individual `.py`-files are called _modules_ -- i.e. `spam.py` is a module.
-And directories containing an `__init__.py`-file are called _packages_ -- i.e. `spam/` is a package.
-
-So far, so good. Our question boils down to whether Python will import the module or the package first.
+**tl;dr** The package `spam` will  be imported.
 
 Unfortunately, this is not described in the Python documentation<sup>3</sup> – and to make matters even worse the [Python `import` documentation](https://docs.python.org/2.7/reference/simple_stmts.html#import) deliberately conflates the module and package terms, making things even more confusing.<sup>4</sup>
 
 StackOverflow to the rescue
 ---------------------------------
-So I did what any programmer would do – search Google, and find some StackOverflow questions:
+To find the answer to this puzzle I did what any programmer would do – search Google, and find some StackOverflow questions:
 
 * [Python: what does “import” prefer - modules or packages?] 
   The answer here is purely trial-and-error -- basically, "packages are imported first on the machines I tried". Normally I would leave it at that and say OK, good enough. But there's a reason why I wouldn't trust that sort of answer in this case. (See the next section "Directory entry order") 
@@ -46,9 +60,9 @@ No luck.
 
 Directory entry order
 -----------------------------
-As the precedence is not documented anywhere – one could start to worry that there simply is no precedence. Is it undefined? This would be normal in C and C++ where [undefined behaviour] leaves these sort of details up to the implementer of the compiler, and the programmer cannot rely on specif. At this point we can start guessing how Python might have implemented the import functionality. 
+As the precedence is not documented anywhere – one could start to worry that there simply is no precedence - it is undefined. This would be normal in C and C++ where [undefined behaviour] leaves these sort of details up to the implementer of the compiler, and it is up to the programmer to avoid the undefined behaviour or handle whatever behaviour is implemented in the specific compiler. At this point, I started guessing how Python might have implemented the import functionality to work my way back to an answer. 
 
-At some point the Python interpreter has to search in the filesystem to find the imported module or package. It would simply iterate through the directories until it found a module or package with a matching name.
+Obviously, at some point during the import, Python has to iterate over the filesystem to find the imported module or package. The simplest possible solution would be to simply iterate through the possible import directories until a module or package with the right name is found.
 
 Iterating through the files and subdirectories of a directory will in general happen in [arbitrary order](http://stackoverflow.com/questions/8977441/does-readdir-guarantee-an-order). An so t
 
