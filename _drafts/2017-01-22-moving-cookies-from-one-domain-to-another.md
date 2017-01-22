@@ -18,3 +18,7 @@ Ideally
 
 
 https://www.ietf.org/rfc/rfc6265.txt
+
+References:
+
+http://stackoverflow.com/a/24943426/118608
