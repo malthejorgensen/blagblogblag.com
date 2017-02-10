@@ -11,6 +11,11 @@ PR merge commit: https://github.com/umdjs/umd/commit/b4c112acf6db4a6c970048a16d7
 
 <sup>2</sup> <http://stackoverflow.com/a/41303288/118608>
 
+bootstrap-datetimepicker
+------------------------
+https://github.com/Eonasdan/bootstrap-datetimepicker/pull/1885
+https://github.com/Eonasdan/bootstrap-datetimepicker/pulls/ToxicTree
+
 CommonJS era package managers
 -----------------------------
 
