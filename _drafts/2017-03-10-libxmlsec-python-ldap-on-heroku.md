@@ -50,6 +50,8 @@ execution.
 
 pip - per requirement overrides
 -------------------------------
+
+http://stackoverflow.com/a/22942120/118608
 You pass 
 Works -- but can't be used because during the build, the files of the app
 and the files install by `heroku-buildpack-apt` resides in a temporary
@@ -102,7 +104,12 @@ The next problem was that libldap wasn't linking to the right library.
 It was linking to the static library (`.a`) instead of the dynamic
 library (`.so`)
 
+    /usr/bin/ld: /app/.apt/usr/lib/x86_64-linux-gnu/libldap_r.a(cyrus.o): relocation R_X86_64_PC32 against symbol `ldap$ pvt_sasl_mutex_dispose' can not be used when making a shared object; recompile with -fPIC
+    libldap_r.a(cyrus.o): relocation R_X86_64_PC32 against symbol `ldap$ pvt_sasl_mutex_dispose' can not be used when making a shared object; recompile with -fPIC
+    libldap_r.a(cyrus.o):  symbol `ldap$ pvt_sasl_mutex_dispose' can not be used when making a shared object; recompile with -fPIC
+
 http://stackoverflow.com/a/13367106/118608
+http://www.openldap.org/lists/openldap-software/200212/msg00404.html
 
 
 Notes
