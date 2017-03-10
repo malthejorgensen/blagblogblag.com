@@ -2,6 +2,10 @@ Problems:
 
 * http://stackoverflow.com/questions/10509607/python-ldap-failed-to-install-in-heroku
 
+Solutions:
+
+* http://starboard.flowtheory.net/2015/07/adventures-with-heroku-python-saml-libxmlsec1-and-swig/
+
 The `heroku-buildpack-apt` buildpack
 ------------------------------------
 If you're reading this @ddollar, thank you! If not, thank you anyway, I guess :)
@@ -121,3 +125,5 @@ https://github.com/heroku/heroku-buildpack-python/compare/master...skilljar:mast
 
 http://stackoverflow.com/a/26776690/118608
 
+
+Hubba hubba http://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere/
