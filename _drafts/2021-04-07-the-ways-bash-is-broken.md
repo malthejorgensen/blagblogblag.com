@@ -9,3 +9,5 @@
 - Arrays are impossible to work with
 - It's very easy to accidentally treat an array as a string
 - `set -e`, `set -o pipefail`, `set -u` seem to be needed in every script
+- Proper integer variables would go a long way
+- Not having special "commands" for if statements `-z`, `-n`, `-e` and so on.
