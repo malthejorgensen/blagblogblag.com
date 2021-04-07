@@ -8,3 +8,4 @@
 - Expanding a variable into multiple command arguments is very difficult
 - Arrays are impossible to work with
 - It's very easy to accidentally treat an array as a string
+- `set -e`, `set -o pipefail`, `set -u` seem to be needed in every script
