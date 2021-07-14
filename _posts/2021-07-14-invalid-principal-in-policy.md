@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding an AWS S3: Invalid principal in policy
+title: "Finding an AWS S3: Invalid principal in policy"
 ---
 
 The other day I was trying to update an AWS S3 bucket policy, but when trying
