@@ -20,9 +20,10 @@
       <header>
         <h1><a title="blagblogblag.com" href="/">blagblogblag.com</a></h1>
         <p>A small island in the vast internet ocean</p>
-        <h3>Blags</h3>
+        <h3>Recent blags</h3>
         <ul>
-          {% for post in site.posts %}
+          {% assign menu_posts = site.posts | slice: 0, 5 %}
+          {% for post in menu_posts %}
           <li><a href="/#{{ post.title }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
