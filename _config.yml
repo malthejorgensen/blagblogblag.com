@@ -1,2 +1,17 @@
 highlighter: rouge
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/pages/:num/"
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      permalink: /:year/:month/:day/:title
