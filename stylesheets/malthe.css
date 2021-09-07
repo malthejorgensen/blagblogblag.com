@@ -10,6 +10,9 @@ code {
   font-family: 'PT Mono', 'Courier New', monospace;
   background-color: #DDD;
 }
+pre code {
+  background-color: inherit;
+}
 
 /* Blog post titles */
 h1 {
