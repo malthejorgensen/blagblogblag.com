@@ -80,11 +80,11 @@ ul.contact-list li.github {
   background-image: url("../img/GitHub-Mark-32px.png");
 }
 
-@media all and (max-height: 650px) {
+/* @media all and (max-height: 650px) {
   footer {
     display: none;
   }
-}
+} */
 
 
 footer {
@@ -97,6 +97,8 @@ footer p {
 
 /* Me image */
 footer img.me {
+  display: none;
+
   margin-left: -90px;
   float: left;
   /* margin-left: 0px; */
