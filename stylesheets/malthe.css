@@ -8,7 +8,7 @@ body {
 /* <code> tags was using fonts that I didn't have */
 code {
   font-family: 'PT Mono', 'Courier New', monospace;
-  background-color: #DDD;
+  background-color: #EFEFEF;
 }
 pre code {
   background-color: inherit;
