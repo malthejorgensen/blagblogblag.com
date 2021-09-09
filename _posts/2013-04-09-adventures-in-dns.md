@@ -8,7 +8,7 @@ to an email that is transparently belonging to the site. E.g.
 `support@example.org` rather than `support-mysite@gmail.com`.
 
 An easy and in my opinion very nice solution is setting up a [Google
-Apps](http://google.com/a) for the domain. This way you get the familiar
+Apps](https://google.com/a) for the domain. This way you get the familiar
 Gmail-interface for your `support@example.org` mail, and you don't have to set
 up and manage some email server like Postfix or exim4. ([Which can be HUGE
 hassle][codinghorror-email])
@@ -16,7 +16,7 @@ hassle][codinghorror-email])
 To get this email service you need to set up Google Apps MX records, which is
 the real reason I'm writing this post: I'm getting tired of setting up these
 records. It's a tedious and too click-hungry process on my current DNS
-service [GratisDNS](http://gratisdns.dk).
+service [GratisDNS](https://gratisdns.dk).
 
 To recieve mail sent to your domain through Google Apps what you gotta do is
 have the following MX records setup in the DNS for your domain:
@@ -34,19 +34,19 @@ where setting up DNS records would be faster.
 
 So I looked for some danish alternatives and found:
 
- * [QuickDNS.dk](http://quickdns.dk)
- * [pleen.dk](http://pleen.dk)
+ * [QuickDNS.dk](https://quickdns.dk)
+ * [pleen.dk](https://pleen.dk)
 
 The interface on these sites was weird and I didn't really understand what was
 going on so I continued my search internationally.
 
-*Note*: [Dandomain.dk](http://dandomain.dk) actually has a pretty good
+*Note*: [Dandomain.dk](https://dandomain.dk) actually has a pretty good
 interface, and makes it a bit faster to set up the DNS records but still not
 really as easy as I wanted to be.
 
 Route 53 on AWS (Amazon Web Services) definitely has the features I want but the
 interface could be better, which is why I ended up choosing
-[gandi.net](http://gandi.net) which has a very slick interface.
+[gandi.net](https://gandi.net) which has a very slick interface.
 
 ## Enter the _Zone File_
 All along what I was looking for was the **zone file**. The zone file is the
@@ -70,8 +70,8 @@ likely already be specified when the zone file is loaded. (This is true for
 
 What you might wanna is to read up on:
 
-* <http://en.wikipedia.org/wiki/Zone_file>
-* <http://www.zytrax.com/books/dns/ch8/soa.html>
+* <https://en.wikipedia.org/wiki/Zone_file>
+* <https://www.zytrax.com/books/dns/ch8/soa.html>
 
 , which I found to be nice resources.
 
@@ -99,5 +99,5 @@ Gotchas for Gandi.net zone file templates:
 * You [cannot specify the SOA directive][1] -- this is set by Gandi.net.
 * You cannot use parenthesis (for multiline statements)
 
-[1]: http://groups.gandi.net/en/topic/gandi.en.domain.dns/22779 "Question on Gandi.net"
-[codinghorror-email]: http://www.codinghorror.com/blog/2010/04/so-youd-like-to-send-some-email-through-code.html "Coding Horror: So You'd Like to Send Some Email (Through Code)"
+[1]: https://groups.gandi.net/en/topic/gandi.en.domain.dns/22779 "Question on Gandi.net"
+[codinghorror-email]: https://www.codinghorror.com/blog/2010/04/so-youd-like-to-send-some-email-through-code.html "Coding Horror: So You'd Like to Send Some Email (Through Code)"

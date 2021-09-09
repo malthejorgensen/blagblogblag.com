@@ -22,4 +22,4 @@ Off to create a Microsoft Account I go!
 _I'm planning on writing a post in the near future detailing my experiences with Azure Storage._
 
 
-[alternativeto.net]: http://alternativeto.net/software/amazon-simple-storage-service-amazon-s3-/
+[alternativeto.net]: https://alternativeto.net/software/amazon-simple-storage-service-amazon-s3-/

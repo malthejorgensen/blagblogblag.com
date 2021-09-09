@@ -14,28 +14,28 @@ _Alternatives_: [Pingdom] (expensive, but industry leader), [UptimeRobot] (free 
 I really like it, but doesn't send texts to Denmark), [monitor.us] (free, sends
 weekly statistics (uptime percentage), but doesn't send texts)
 
-[webcron]: http://www.webcron.org/
-[UptimeRobot]: http://uptimerobot.com/
-[pingdom]: http://www.pingdom.com/
-[monitor.us]: http://www.monitor.us/
+[webcron]: https://www.webcron.org/
+[UptimeRobot]: https://uptimerobot.com/
+[pingdom]: https://www.pingdom.com/
+[monitor.us]: https://www.monitor.us/
 
 ## Continous integration (git hooks)
 **drone.io** is free, integrates with Github, and has simple and intuitive
 interface. Doesn't have all the bells and whistles, but I don't need those so
-drone.io is just perfect for me. ([Link](http://drone.io))
+drone.io is just perfect for me. ([Link](https://drone.io))
 
 _Alternatives_: [TravisCI] (a cross between Jenkins and drone.io -- more
 advanced, slick UI, but I never tried it), [Jenkins] (free, open source tool
 but I don't get the interface and you have to host yourself)
 
-[TravisCI]: http://travis-ci.org/
-[Jenkins]: http://jenkins-ci.org/
+[TravisCI]: https://travis-ci.org/
+[Jenkins]: https://jenkins-ci.org/
 
 ## SystemRescueCD
 This Bootable Linux CD has saved me time and time again. If you mess up your
 partition table, if your OS is no longer bootable. It has never failed me.
 
-[Link](http://www.sysresccd.org)
+[Link](https://www.sysresccd.org)
 
 ## OS X Utilities
 
@@ -64,9 +64,9 @@ Having trouble finding that Finder window buried beneath your browser and editor
 windows? On Linux there's [xmonad], [awesome] and [dwm] (and others).
 Now you can get similar functionality on OS X.
 
-[xmonad]: http://xmonad.org
-[awesome]: http://awesome.naquadah.org/
-[dwm]: http://dwm.suckless.org/
+[xmonad]: https://xmonad.org
+[awesome]: https://awesome.naquadah.org/
+[dwm]: https://dwm.suckless.org/
 
 #### Amethyst
 [Amethyst] A tiling window manager like [xmonad] for OS X.
@@ -74,7 +74,7 @@ It often fails to layout windows, for example it likes to fill the screen with a
 MacVim window even though the current layout should actually be two-split
 vertical with MacVim and Safari.
 
-[Amethyst]: http://ianyh.com/amethyst/
+[Amethyst]: https://ianyh.com/amethyst/
 
 #### xnomad
 [xnomad] uses private API calls meaning that is a bit of a hack.
@@ -100,5 +100,5 @@ Otherwise running `xmonad` will ask you to install `X11` (even though you alread
 installed it) since the binaries in `/usr/X11/bin` are shims that asks you to install
 X11.
 
-[XQuartz]: http://xquartz.macosforge.org
+[XQuartz]: https://xquartz.macosforge.org
 [osxmonad]: https://github.com/xmonad/osxmonad

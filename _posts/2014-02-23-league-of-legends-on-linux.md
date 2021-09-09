@@ -6,7 +6,7 @@ From time to time I play League of Legends with a couple of friends.
 After having switched to Linux from OS X, I needed to get it working on Linux as
 there's no native client for Linux.
 
-What worked for me was to install it via [PlayOnLinux](http://www.playonlinux.com/).
+What worked for me was to install it via [PlayOnLinux](https://www.playonlinux.com/).
 This worked perfectly until I needed to start an actual game. (Updater, Login,
 Lobby etc. worked fine)
 
@@ -38,4 +38,4 @@ _Note:_ When starting the game, the load screen (in fullscreen with the loading
 bars and your ping showing) will be stuck for about 1 minute, but don't
 worry: the game will start. It did for me at least.
 
-Reference: <http://www.playonlinux.com/en/issue-2219.html>
+Reference: <https://www.playonlinux.com/en/issue-2219.html>

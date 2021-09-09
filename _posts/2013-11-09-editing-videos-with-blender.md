@@ -5,17 +5,17 @@ title: Editing videos with Blender
 [Blender] is an Open Source 3D modelling- and animation tool.  
 -- Today I found out it also does video editing!
 
-[Blender]: http://blender.org
+[Blender]: https://blender.org
 
 _This post is based on Blender version 2.69_
 
-It is [well known](http://www.youtube.com/watch?v=Sh-cnaJoGCw&t=28m50s) that the
+It is [well known](https://www.youtube.com/watch?v=Sh-cnaJoGCw&t=28m50s) that the
 Open Source community has yet to produce decent video editing software.  But
 being stubborn and this being a small project I didn't want to buy one of those
 large, expensive video editing suites.
 
-[kdenlive]: http://www.kdenlive.org/
-[Openshot]: http://www.openshotvideo.com/
+[kdenlive]: https://www.kdenlive.org/
+[Openshot]: https://www.openshotvideo.com/
 
 Blender to the rescue
 ---------------------

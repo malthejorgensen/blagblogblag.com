@@ -89,6 +89,6 @@ implemented as a separate command outside of fish)
 **References**
 
 
-<sup>4</sup> ZSH process substitution: <http://zsh.sourceforge.net/Intro/intro_7.html>
+<sup>4</sup> ZSH process substitution: <https://zsh.sourceforge.net/Intro/intro_7.html>
 <sup>5</sup> fish process substitution: <https://news.ycombinator.com/item?id=9017996>
 Fish reverse process substitution: <https://github.com/fish-shell/fish-shell/issues/1786>

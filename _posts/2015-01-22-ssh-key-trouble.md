@@ -98,4 +98,4 @@ always re-add it later). You can remove it with `ssh-add -d ~/.ssh/KEY_PERSONAL`
 **References**
 
 * <https://confluence.atlassian.com/display/BITBUCKET/Troubleshoot+SSH+Issues#TroubleshootSSHIssues-Usingasinglekeywithoutaconfigfile%28MacOSXandLinux%29>
-* <http://stackoverflow.com/questions/10901102/bitbucket-trying-to-push-but-i-get-master-conq-repository-access-denied-fa>
+* <https://stackoverflow.com/questions/10901102/bitbucket-trying-to-push-but-i-get-master-conq-repository-access-denied-fa>

@@ -68,14 +68,14 @@ I found nothing.
 So I started writing my question, but as I wrote more questions came up
 and I actually found a bunch of questions that were similar to mine:
 
-* [Deliberately opening duplicate questions as search targets](http://meta.stackoverflow.com/questions/290768/deliberately-opening-duplicate-questions-as-search-targets)
-* [Should I ask a new question in order to make the answer easier to find?](http://meta.stackoverflow.com/questions/314210/should-i-ask-a-new-question-in-order-to-make-the-answer-easier-to-find)
-* [Should I post a question that I'm going to immediately close as a duplicate? \[duplicate\]](http://meta.stackoverflow.com/questions/307615/should-i-post-a-question-that-im-going-to-immediately-close-as-a-duplicate?lq=1)
-* [I found an answer but the question was very different from mine. How can I make the answer easier to find for other people?](http://meta.stackoverflow.com/questions/308447/i-found-an-answer-but-the-question-was-very-different-from-mine-how-can-i-make?lq=1)
+* [Deliberately opening duplicate questions as search targets](https://meta.stackoverflow.com/questions/290768/deliberately-opening-duplicate-questions-as-search-targets)
+* [Should I ask a new question in order to make the answer easier to find?](https://meta.stackoverflow.com/questions/314210/should-i-ask-a-new-question-in-order-to-make-the-answer-easier-to-find)
+* [Should I post a question that I'm going to immediately close as a duplicate? \[duplicate\]](https://meta.stackoverflow.com/questions/307615/should-i-post-a-question-that-im-going-to-immediately-close-as-a-duplicate?lq=1)
+* [I found an answer but the question was very different from mine. How can I make the answer easier to find for other people?](https://meta.stackoverflow.com/questions/308447/i-found-an-answer-but-the-question-was-very-different-from-mine-how-can-i-make?lq=1)
 
 Even this one is relevant, yet slightly different:
 
-* [On the searchability of the originals of duplicate questions](http://meta.stackoverflow.com/questions/258690/on-the-searchability-of-the-originals-of-duplicate-questions)
+* [On the searchability of the originals of duplicate questions](https://meta.stackoverflow.com/questions/258690/on-the-searchability-of-the-originals-of-duplicate-questions)
 
 It contains the important observation<sup>[4](#footnote-4)</sup> that _if
 you're not logged in, you will be redirected to the question not marked as
@@ -95,16 +95,16 @@ If it's marked as a duplicate visitors coming to StackOverflow will be
 redirected to the "original" question and may dismiss it because its not
 asking what the question they're having.
 
-Reference: http://meta.stackoverflow.com/a/258760/118608
+Reference: https://meta.stackoverflow.com/a/258760/118608
 -->
 
-<a name="footnote-4"><sup>4</sup></a> <http://meta.stackoverflow.com/a/258760/118608>  
+<a name="footnote-4"><sup>4</sup></a> <https://meta.stackoverflow.com/a/258760/118608>  
 <a name="footnote-5"><sup>5</sup></a>
-<http://meta.stackoverflow.com/questions/294805/what-if-my-duplicate-question-is-seemingly-much-better-worded-than-the-origin?rq=1>
+<https://meta.stackoverflow.com/questions/294805/what-if-my-duplicate-question-is-seemingly-much-better-worded-than-the-origin?rq=1>
 or
-<http://meta.stackoverflow.com/questions/254755/what-is-the-proper-action-if-duplicate-question-is-better-than-original?rq=1>
+<https://meta.stackoverflow.com/questions/254755/what-is-the-proper-action-if-duplicate-question-is-better-than-original?rq=1>
 or
-<http://meta.stackoverflow.com/questions/251938/should-i-flag-a-question-as-duplicate-if-it-has-received-better-answers>
+<https://meta.stackoverflow.com/questions/251938/should-i-flag-a-question-as-duplicate-if-it-has-received-better-answers>
 or
-<http://meta.stackexchange.com/questions/147643/should-i-vote-to-close-a-duplicate-question-even-though-its-much-newer-and-ha>
+<https://meta.stackexchange.com/questions/147643/should-i-vote-to-close-a-duplicate-question-even-though-its-much-newer-and-ha>
 

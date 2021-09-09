@@ -23,12 +23,12 @@ don't do the "trick" with the surrounding white glow. Both are 32-bit.
 
 References
 ----------
-* http://www.jonathantneal.com/blog/understand-the-favicon/
-* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
-* http://blog.teamtreehouse.com/how-to-make-a-favicon
+* https://www.jonathantneal.com/blog/understand-the-favicon/
+* https://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
+* https://blog.teamtreehouse.com/how-to-make-a-favicon
 * https://www.tsohost.com/blog/a-101-guide-to-creating-a-cross-browser-favicon
   A list of browsers and favicon formats
 
 
 
-[apple.com]: http://www.apple.com/favicon.ico
+[apple.com]: https://www.apple.com/favicon.ico

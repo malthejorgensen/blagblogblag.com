@@ -39,7 +39,7 @@ config variable `SERVER_NAME`.
 This config variable is used when creating absolute URLs (URLs that include your domain), e.g.:
 
     url_for('user_profile')                 # will return '/profile'
-	url_for('user_profile', _external=True) # will return 'http://example.org/profile'
+	url_for('user_profile', _external=True) # will return 'https://example.org/profile'
     
 In our app we use the `_external` argument when sending emails out to our
 users in our background worker process.
@@ -106,5 +106,5 @@ things "as expected" on our local dev maching.
 
 References:
 
-<sup>1</sup> http://flask.pocoo.org/docs/0.11/config/#builtin-configuration-values (See `SERVER_NAME` in the table)  
+<sup>1</sup> https://flask.pocoo.org/docs/0.11/config/#builtin-configuration-values (See `SERVER_NAME` in the table)  
 <sup>2</sup> https://devcenter.heroku.com/articles/github-integration-review-apps  

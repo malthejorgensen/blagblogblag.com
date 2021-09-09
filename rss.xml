@@ -2,11 +2,11 @@
 layout: nil
 ---
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>blagblogblag.com</title>
-    <link>http://malthejorgensen.github.com/</link>
-    <atom:link href="http://malthejorgensen.github.com/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://malthejorgensen.github.com/</link>
+    <atom:link href="https://malthejorgensen.github.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>stuff from malthejorgensen.github.com</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,14 +15,14 @@ layout: nil
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://malthejorgensen.github.com{{ post.url }}</link>
+      <link>https://malthejorgensen.github.com{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>malthejorgensen.github@malthejorgensen.github.com (malthejorgensen)</author>
-      <guid>http://malthejorgensen.github.com{{ post.id }}</guid>
+      <guid>https://malthejorgensen.github.com{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
 
   </channel>
-  <!-- http://www.functionn.in/2012/06/jekyll-github-blog-feeds-template-rss.html#.UZFK2IJMaWs -->
+  <!-- https://www.functionn.in/2012/06/jekyll-github-blog-feeds-template-rss.html#.UZFK2IJMaWs -->
 </rss>

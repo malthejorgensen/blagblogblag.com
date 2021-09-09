@@ -22,7 +22,7 @@ I can highly recommend using _SSL test_ to check your SSL setup.
 Not only does it point out vulnerabilites but also links to resources on what
 the vulnerabilities entail and how to fix them.
 
-<sup>1</sup> _Heartbleed_: http://heartbleed.com/  
+<sup>1</sup> _Heartbleed_: https://heartbleed.com/  
 <sup>2</sup> _POODLE_: https://en.wikipedia.org/wiki/POODLE and https://www.openssl.org/~bodo/ssl-poodle.pdf
 
 [SSL test]: https://www.ssllabs.com/ssltest/

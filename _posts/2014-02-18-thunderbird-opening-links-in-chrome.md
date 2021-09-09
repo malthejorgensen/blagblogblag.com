@@ -24,4 +24,4 @@ to `true`. This makes Thunderbird prompt you what program to open every time you
 click a link. Here you can choose Firefox, and also check "remember my
 choice...".
 
-Reference: <http://www.ghacks.net/2013/01/20/fix-for-thunderbird-not-opening-links/>
+Reference: <https://www.ghacks.net/2013/01/20/fix-for-thunderbird-not-opening-links/>

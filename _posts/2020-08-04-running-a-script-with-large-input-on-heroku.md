@@ -46,7 +46,7 @@ The full session would look something like:
 
 If you don't have access to requests, you can use the built-in `urllib`-library:
 
-    python -c 'from urllib.request import urlopen; print(urlopen("http://google.com").read())'
+    python -c 'from urllib.request import urlopen; print(urlopen("https://google.com").read())'
 
 Here, you'll need to strip the beginning `b'` and ending `'` since it returns a `bytes`-object.
 

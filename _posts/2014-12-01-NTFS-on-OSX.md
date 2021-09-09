@@ -23,4 +23,4 @@ be read-only.
 
 Tested on OS X 10.7.5.
 
-Reference: http://computers.tutsplus.com/tutorials/quick-tip-how-to-write-to-ntfs-drives-in-os-x-mavericks--cms-21434
+Reference: https://computers.tutsplus.com/tutorials/quick-tip-how-to-write-to-ntfs-drives-in-os-x-mavericks--cms-21434

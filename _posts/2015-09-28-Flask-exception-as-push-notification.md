@@ -30,9 +30,9 @@ I set up a filter in Gmail, forwarding those mails (filtered on the `To:` field)
 to `API-KEY@api.pushover.net` – and now I'm receiving exceptions from
 Flask as push notifications on my phone. Pretty neat!
 
-<sup>1</sup> <http://flask.pocoo.org/docs/0.10/errorhandling/#error-mails>  
+<sup>1</sup> <https://flask.pocoo.org/docs/0.10/errorhandling/#error-mails>  
 <sup>2</sup> <https://support.google.com/mail/answer/12096?hl=en>  
-<sup>3</sup> <http://updates.pushover.net/post/24408806716/e-mail-to-pushover-gateway>  
+<sup>3</sup> <https://updates.pushover.net/post/24408806716/e-mail-to-pushover-gateway>  
 
 [Pushover]: https://pushover.net/
 [Boxcar]: https://boxcar.io/

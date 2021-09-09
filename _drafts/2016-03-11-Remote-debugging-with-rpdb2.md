@@ -23,7 +23,7 @@ This only got me version 1.3.6, however, which doesn't work<sup>1</sup> :(
 
 So I had to use the original tarball:
 
-    pip install http://winpdb.googlecode.com/files/winpdb-1.4.8.tar.gz
+    pip install https://winpdb.googlecode.com/files/winpdb-1.4.8.tar.gz
 
 even though version 1.4.8 seems to be on PyPi?<sup>2</sup>
 
@@ -96,5 +96,5 @@ As noted the actual printout has to be viewed in the original "debuggee" process
 
 References:
 
-<sup>1</sup> http://stackoverflow.com/a/3528712/118608  
+<sup>1</sup> https://stackoverflow.com/a/3528712/118608  
 <sup>2</sup> https://pypi.python.org/pypi/winpdb/1.4.8  

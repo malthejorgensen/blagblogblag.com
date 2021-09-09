@@ -54,9 +54,9 @@ To find the answer to this puzzle I did what any programmer would do – search 
 
 No luck.
 
-[Python: what does “import” prefer - modules or packages?]: http://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages?noredirect=1&lq=1#comment15934593_6050009
-[Python import precedence: packages or modules?]: http://stackoverflow.com/questions/4092395/python-import-precedence-packages-or-modules?noredirect=1&lq=1
-[Python Import Class With Same Name as Directory]: http://stackoverflow.com/a/16245345/118608
+[Python: what does “import” prefer - modules or packages?]: https://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages?noredirect=1&lq=1#comment15934593_6050009
+[Python import precedence: packages or modules?]: https://stackoverflow.com/questions/4092395/python-import-precedence-packages-or-modules?noredirect=1&lq=1
+[Python Import Class With Same Name as Directory]: https://stackoverflow.com/a/16245345/118608
 
 Directory entry order
 -----------------------------
@@ -64,7 +64,7 @@ As the precedence is not documented anywhere – one could start to worry that t
 
 Obviously, at some point during the import, Python has to iterate over the filesystem to find the imported module or package. The simplest possible solution would be to simply iterate through the possible import directories until a module or package with the right name is found.
 
-Iterating through the files and subdirectories of a directory will in general happen in [arbitrary order](http://stackoverflow.com/questions/8977441/does-readdir-guarantee-an-order). An so t
+Iterating through the files and subdirectories of a directory will in general happen in [arbitrary order](https://stackoverflow.com/questions/8977441/does-readdir-guarantee-an-order). An so t
 
 You can get the "unsorted" list of entries in a directory by running `ls -f`. This is equivalent to the output of `import os; os.listdir(...)` in Python.
 On OS X it seems even though it should be "unordered" it's always alphabetically sorted.
@@ -73,8 +73,8 @@ On FreeBSD the ordering was arbitrary – not by creation time, not by name, and
 
 Conclusion
 ----------------
-Somebody<sup>6</sup> found a very old Python "essay" (don't know what that is) explaining that this is the intended behaviour, but linking to the now dead http://www.python.org/doc/essays/packages.html.
-It now lives at: http://legacy.python.org/doc/essays/packages.html.
+Somebody<sup>6</sup> found a very old Python "essay" (don't know what that is) explaining that this is the intended behaviour, but linking to the now dead https://www.python.org/doc/essays/packages.html.
+It now lives at: https://legacy.python.org/doc/essays/packages.html.
 
 
 References
@@ -91,7 +91,7 @@ References
 
 However, this just says that any variable, class, or function in a package takes precedence over a module of the same name. -- Not that the package itself would be loaded "before" a module of the same name.
 
-<sup>6</sup> http://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages?noredirect=1&lq=1#comment15934593_6050009
+<sup>6</sup> https://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages?noredirect=1&lq=1#comment15934593_6050009
 
-* http://stackoverflow.com/questions/4092395/python-import-precedence-packages-or-modules
-* http://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages
+* https://stackoverflow.com/questions/4092395/python-import-precedence-packages-or-modules
+* https://stackoverflow.com/questions/6049825/python-what-does-import-prefer-modules-or-packages

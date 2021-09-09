@@ -1,10 +1,10 @@
 Problems:
 
-* http://stackoverflow.com/questions/10509607/python-ldap-failed-to-install-in-heroku
+* https://stackoverflow.com/questions/10509607/python-ldap-failed-to-install-in-heroku
 
 Solutions:
 
-* http://starboard.flowtheory.net/2015/07/adventures-with-heroku-python-saml-libxmlsec1-and-swig/
+* https://starboard.flowtheory.net/2015/07/adventures-with-heroku-python-saml-libxmlsec1-and-swig/
 
 The `heroku-buildpack-apt` buildpack
 ------------------------------------
@@ -55,7 +55,7 @@ execution.
 pip - per requirement overrides
 -------------------------------
 
-http://stackoverflow.com/a/22942120/118608
+https://stackoverflow.com/a/22942120/118608
 You pass 
 Works -- but can't be used because during the build, the files of the app
 and the files install by `heroku-buildpack-apt` resides in a temporary
@@ -112,8 +112,8 @@ library (`.so`)
     libldap_r.a(cyrus.o): relocation R_X86_64_PC32 against symbol `ldap$ pvt_sasl_mutex_dispose' can not be used when making a shared object; recompile with -fPIC
     libldap_r.a(cyrus.o):  symbol `ldap$ pvt_sasl_mutex_dispose' can not be used when making a shared object; recompile with -fPIC
 
-http://stackoverflow.com/a/13367106/118608
-http://www.openldap.org/lists/openldap-software/200212/msg00404.html
+https://stackoverflow.com/a/13367106/118608
+https://www.openldap.org/lists/openldap-software/200212/msg00404.html
 
 
 Notes
@@ -123,7 +123,7 @@ https://github.com/heroku/heroku-buildpack-python/compare/master...skilljar:mast
 
 @damgad has a Python buildpack that sovles this for `python-ldap` (https://github.com/damgad/heroku-buildpack-python-ldap)
 
-http://stackoverflow.com/a/26776690/118608
+https://stackoverflow.com/a/26776690/118608
 
 
-Hubba hubba http://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere/
+Hubba hubba https://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere/

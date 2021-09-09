@@ -115,7 +115,7 @@ Therefore my choice of _PaaS_ is – for now – AppFog.
 
 #### References
 
- * [PaaS on Wikipedia](http://en.wikipedia.org/wiki/Platform_as_a_service)
+ * [PaaS on Wikipedia](https://en.wikipedia.org/wiki/Platform_as_a_service)
  * **Zero-downtime deployment** means updating your website with zero downtime for the end users (i.e. without "_Website currently undergoing maintenance_"). This is usually achieved by setting the updated version up on separate instances while having the old version still running. The HTTP routing is then shifted from pointing to the old version to the new, and the instances with the old version can then be shut down.
 
 [1]: https://github.com/appfog/af/issues/44

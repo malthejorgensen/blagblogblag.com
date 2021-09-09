@@ -104,4 +104,4 @@ preferably one that fixes them once and for all.
 <!-- We cannot live in a world of "string-first programming" we need to think and program
 in structures (like PowerShell on Windows does). -->
 
-[sed-turing-complete]: http://www.catonmat.net/blog/proof-that-sed-is-turing-complete/
+[sed-turing-complete]: https://www.catonmat.net/blog/proof-that-sed-is-turing-complete/

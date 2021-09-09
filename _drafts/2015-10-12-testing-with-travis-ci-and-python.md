@@ -39,7 +39,7 @@ You can check out the coverage with
 
 References
 ----------
-* http://docs.travis-ci.com/user/languages/python/
+* https://docs.travis-ci.com/user/languages/python/
 
 
 

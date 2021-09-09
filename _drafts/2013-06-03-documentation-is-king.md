@@ -2,7 +2,7 @@
 layout: post
 title: Documentation is king!
 ---
-Sam Saffron recently argued why [Ember is better than AngularJS for long term development](http://eviltrout.com/2013/06/15/ember-vs-angular.html)
+Sam Saffron recently argued why [Ember is better than AngularJS for long term development](https://eviltrout.com/2013/06/15/ember-vs-angular.html)
 – I don't have enough experience with either of these frameworks to say whether
 that is true or false. A lot of commenters argue that Sam didn't quite
 understand how to use AngularJS – but Sam just followed tutorials and examples.
@@ -27,16 +27,16 @@ much structure, it was converted into being largely a wrapper library over the C
 standard library ([strpbrk], [strcspn]) and Posix functions ([opendir], [stat])
 with templating functionality in order embed code in HTML.
 
-[strpbrk]: http://www.php.net/manual/en/function.strstr.php
-[strcspn]: http://www.php.net/manual/en/function.strcspn.php
-[opendir]: http://www.php.net/manual/en/function.opendir.php
-[stat]: http://www.php.net/manual/en/function.stat.php
+[strpbrk]: https://www.php.net/manual/en/function.strstr.php
+[strcspn]: https://www.php.net/manual/en/function.strcspn.php
+[opendir]: https://www.php.net/manual/en/function.opendir.php
+[stat]: https://www.php.net/manual/en/function.stat.php
 
 People flocked to PHP in spite of this plus many inconsistencies in the framework and a lack of
 features for structured programming (classes, modules, namespaces).  
 There was a number of reasons for this – PHP was gratis, many hosts supported it, and it was easy to set up. But I think that there was another very significant reason gained so much traction: _PHP had very good
 documentation_.  Every function in the PHP library has always had (at least since
-the early 2000's) clear and comprehensive documentation on [PHP.net](http://php.net) with an example on almost every page.
+the early 2000's) clear and comprehensive documentation on [PHP.net](https://php.net) with an example on almost every page.
 
 The Open Source movement
 ------------------------

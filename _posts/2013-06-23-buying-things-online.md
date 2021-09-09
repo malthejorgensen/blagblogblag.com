@@ -9,7 +9,7 @@ within days of my purchase, and I am very happy with the product. However before
 I bought something off the site I was worried that it was a scam. This is a
 story of worry, research and a leap of faith._
 
-So I was planning to buy a drawing tablet, like [the ones from Wacom](http://www.wacom.com/products/pen-displays/cintiq/cintiq-13hd).
+So I was planning to buy a drawing tablet, like [the ones from Wacom](https://www.wacom.com/products/pen-displays/cintiq/cintiq-13hd).
 However, after researching a little I found out that today (as opposed to a
     couple of years ago when I last checked) cheaper are alternatives available –
 possibly because some of Wacom's patents have expired. These alternatives are
@@ -32,7 +32,7 @@ The list is basically yelling: "_Hey look, we're legit – just go ahead and buy
 something already!_", which is coincidentally also what you would want to do if
 you were luring people into a scam.
 
-[bosto-tablet.com]: http://bosto-tablet.com
+[bosto-tablet.com]: https://bosto-tablet.com
 
 So I decided to probe a little further. The site presents the mail
 `info@bosto-tablet.com` to which I wrote:
@@ -81,10 +81,10 @@ had a review of bosto-tablet.com at the time of writing.
 
 #### Sites
 
-- [ResellerRatings](http://resellerratings.com) even though they earn money by 
+- [ResellerRatings](https://resellerratings.com) even though they earn money by 
   making the vendors pay to contact users on the site (to respond to any 
   critique) the site is still riddled with ads.
-- [TrustPilot](http://trustpilot.com) has the same as business model as 
+- [TrustPilot](https://trustpilot.com) has the same as business model as 
   ResellerRatings but without ads. Being a newer, originally Danish, site it 
   doesn't have the volume ResellerRatings has (yet), but it is better. They have
   some problems with fake reviews, though I guess any site of this sort will.
@@ -98,5 +98,5 @@ Futhermore the instant availability of the plugin makes it easy to review sites
 and could possibly mean that more sites get rated than on sites such as
 TrustPilot.
 
-  - [WOT](http://www.mywot.com/) tried it, and it worked very nicely.
-  - [websherpa](http://websherpa.me) another browser plugin, didn't test it.
+  - [WOT](https://www.mywot.com/) tried it, and it worked very nicely.
+  - [websherpa](https://websherpa.me) another browser plugin, didn't test it.
