@@ -1,43 +1,31 @@
+---
+title: All blags
+---
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="stylesheets/malthe.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="alternate" type="application/rss+xml" title="blagblogblag.com RSS feed" href="/rss.xml">
+    {% include html_head.html %}
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper single-column">
       <header>
         <h1><a title="blagblogblag.com" href="/">blagblogblag.com</a></h1>
         <p>A small island in the vast internet ocean</p>
-        <h3>Recent blags</h3>
-        <ul>
-          {% assign menu_posts = site.posts | slice: 0, 5 %}
-          {% for post in menu_posts %}
-          <li><a href="/#{{ post.title }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
+      </header>
+      <a href="/">&laquo; Back to frontpage</a>
+      <div class="content">
+        <h3>All blag posts</h3>
+        {% for post in site.posts %}
+        <span class="blag-date">{{ post.date | date: "%Y-%m-%d" }}</span><a href="{{ post.url }}">{{ post.title }}</a><br>
+        {% endfor %}
         <h3>Stuff</h3>
         <ul>
-          <li><a href="tools.html">Tools I use</a></li>
-          {% comment %}
+          <!--<li><a href="tools.html">Tools I use</a></li>-->
           {% for page in site.pages %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
           {% endfor %}
-          {% endcomment %}
         </ul>
-      </header>
-      {{ content }}
+      </div>
       <footer>
         <img class="me" src="https://www.gravatar.com/avatar/8de291e8f2ffc040736008eab50fe2e3.png" alt="Picture of me">
         <h3>Me</h3>

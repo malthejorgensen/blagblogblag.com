@@ -15,3 +15,10 @@ defaults:
     values:
       layout: "post"
       permalink: /:year/:month/:day/:title
+  -
+    scope:
+      path: "/*.md"
+      type: "pages"
+    values:
+      layout: "page"
+      permalink: /:title

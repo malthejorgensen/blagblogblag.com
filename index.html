@@ -1,32 +1,32 @@
 ---
-layout: front-page
+layout: base_with_sidebar
 title: blagblogblag
 ---
-<section>
-  {% for post in paginator.posts %}
-  <article>
-    <h1><a name="{{ post.title }}">{{ post.title }}</a></h1>
-    <small class="date">{{ post.date | date_to_long_string }}</small>
-    {{ post.content }}
-  </article>
-  {% endfor %}
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    <div class="previous">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" >
-        Newer
-      </a>
-    {% endif %}
-    </div>
-    <span class="page_number ">
-      <!-- Page {{ paginator.page }} of {{ paginator.total_pages }} -->
-    </span>
-    <div class="next">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Older</a>
-      {% endif %}
-    </div>
+{% for post in paginator.posts %}
+<article>
+  <h1 class="blag-title" id="{{ post.title }}">{{ post.title }}</h1>
+  <small class="blag-date">{{ post.date | date_to_long_string }}</small>
+  <div class="blag-content">
+  {{ post.content }}
   </div>
-</section>
+</article>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  <div class="previous">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" >
+      Newer
+    </a>
+  {% endif %}
+  </div>
+  <span class="page_number ">
+    <!-- Page {{ paginator.page }} of {{ paginator.total_pages }} -->
+  </span>
+  <div class="next">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Older</a>
+    {% endif %}
+  </div>
+</div>
