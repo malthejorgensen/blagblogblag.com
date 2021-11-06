@@ -3,6 +3,7 @@
 
 html, body {
   height: 100%;
+  font-size: 15px;
 }
 
 body {
@@ -31,17 +32,30 @@ ul {
   padding-left: 15px;
 }
 
+#blag-list .blag-title {
+  font-size: 15px;
+}
+#blag-list .blag-line {
+  padding-bottom: 2px;
+}
+
 /* Blog post titles */
 h1 {
   margin-bottom: 0px;
 }
-.blag-title {
+.blag-post .blag-title {
+  font-size: 18px;
+}
+.blag-post .blag-tagline {
+  font-size: 10px;
+}
+.post-title {
   color:#222;
   line-height:1.1;
   font-size:28px;
 }
 @media print, screen and (max-width: 480px) {
-  .blag-title {
+  .post {
     font-size: 23px;
   }
 }
@@ -68,41 +82,9 @@ article img {
   float: right;
 }
 
-/* Blog post list */
-header h3 {
-  margin-bottom: 5px;
-}
-header {
-  max-height: 450px;
-  overflow-y: scroll;
-}
-header ul {
-  max-height: 30%;
-  padding-left: 15px;
-}
-header ul li {
-}
-
-@media print, screen and (max-width: 960px) {
-  header .blag-list {
-    display: none;
-  }
-  header .stuff-list {
-    display: none;
-  }
-}
-header .mobile-links {
-    display: none;
-}
-
-@media print, screen and (max-width: 960px) {
-  header .mobile-links {
-    display: flex;
-    justify-content: space-between;
-  }
-  header .mobile-links a {
-    display: block;
-  }
+.back-button {
+  float: right;
+  font-size: 17px;
 }
 
 .single-column {
@@ -124,17 +106,29 @@ header .mobile-links {
 footer h3 {
   margin-bottom: 5px;
 }
+.contact-list {
+  text-align: center;
+}
 
-ul.contact-list li {
-  list-style-type:none;
+.contact-list div {
+  display: inline-block;
+  width:  130px;
+  padding-left: 20px;
+  text-align: left;
+
   background-position: 0px center; /* no-repeat; */
   background-size: 16px 16px; /* no-repeat; */
   background-repeat: no-repeat;
-  margin-left:-30px;
-  padding-left:25px;
 }
 
-ul.contact-list li.twitter {
+.contact-list a {
+  color: #222;
+}
+.contact-list a:hover {
+  color: #777;
+}
+
+.contact-list .twitter {
   /* https://twitter.com/logo */
   /* list-style-image: url("https://twitter.com/images/resources/twitter-bird-16x16.png"); */
 
@@ -149,7 +143,7 @@ ul.contact-list li.twitter {
   background-size: 14px 11px; /* Oddly enough the "16x16" twitter bird is
                                  actually 14x11 */
 }
-ul.contact-list li.github {
+.contact-list .github {
   /* https://github.com/logos */
   /* list-style-image: url("../img/GitHub-Mark-32px.png"); */
 

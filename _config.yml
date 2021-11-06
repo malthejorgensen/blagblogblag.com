@@ -2,10 +2,10 @@ highlighter: rouge
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  # - jekyll-paginate
 
-paginate: 5
-paginate_path: "/pages/:num/"
+# paginate: 5
+# paginate_path: "/pages/:num/"
 
 defaults:
   -
