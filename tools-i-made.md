@@ -6,7 +6,7 @@ permalink: /tools-I-made
 On this page I list a bunch of (developer) tools I enjoy using in my work and
 elsewhere.
 
-## prex
+## prex ([link](https://github.com/malthejorgensen/prex))
 prex is to sed, what awk is grep.
 
 Yes yes, I'm old now and sd and rg exist, but they didn't back then!
