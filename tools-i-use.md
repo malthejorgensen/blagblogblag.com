@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tools I use
+permalink: /tools-I-use
 ---
 On this page I list a bunch of (developer) tools I enjoy using in my work and
 elsewhere.

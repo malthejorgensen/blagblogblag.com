@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tools I made
+permalink: /tools-I-made
 ---
 On this page I list a bunch of (developer) tools I enjoy using in my work and
 elsewhere.

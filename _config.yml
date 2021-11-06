@@ -15,10 +15,12 @@ defaults:
     values:
       layout: "post"
       permalink: /:year/:month/:day/:title
-  -
-    scope:
-      path: "/*.md"
-      type: "pages"
-    values:
-      layout: "page"
-      permalink: /:title
+  # Page permalinks cannot be overridden from here
+  # See: https://jekyllrb.com/docs/permalinks/#pages
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     permalink: /:slug
