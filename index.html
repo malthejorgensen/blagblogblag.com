@@ -44,6 +44,31 @@ title: All blags
     </div>
     <script src="javascripts/scale.fix.js"></script>
 
+    <script>
+    var MAX_DAYS = 30;
+    function colorInterpolate(numDays) {
+      // This controls the green channel of RGB to create a red-orange-yellow
+      // gradient effect for new articles..
+      //
+      // Red is (of course): rgb(255, 0, 0)
+      // Orange is around: rgb(255, 170, 0)
+      // Yellow is: rgb(255, 255, 0)
+      return (numDays / MAX_DAYS) * 230;
+    }
+    document.querySelectorAll('.blag-date').forEach(function(element) {
+      var now = new Date();
+      var blagDate = Date.parse(element.innerText);
+      var daysAgo = (now - blagDate) / (24 * 60 * 60 * 1000);
+      if (daysAgo < MAX_DAYS) {
+        var newEl = document.createElement('span');
+        newEl.innerText = ' (' + Math.round(daysAgo) + ' days ago)';
+        newEl.className = 'new-blag';
+        newEl.style.color = 'rgb(255, ' + colorInterpolate(daysAgo).toString() + ', 0)';
+        element.parentNode.appendChild(newEl);
+      }
+    });
+    </script>
+
     <!-- BEGIN Google Analytics -->
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
