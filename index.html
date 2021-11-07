@@ -14,14 +14,14 @@ title: All blags
       </header>
       <div class="content">
         <h3>Blog posts</h3>
-        {% for post in site.posts %}
         <div id="blag-list">
+        {% for post in site.posts %}
           <div class="blag-line">
             <span class="blag-date" title="{{ post.date | date_to_string: "ordinal", "US" }}">{{ post.date | date: "%Y-%m-%d" }}</span>
             <span><a href="{{ post.url }}" class="blag-title">{{ post.title }}</a><span>
           </div>
-        </div>
         {% endfor %}
+        </div>
         <h3 style="margin-top: 20px;">Projects and things</h3>
         <ul>
           <!--<li><a href="tools.html">Tools I use</a></li>-->
