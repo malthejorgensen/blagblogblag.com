@@ -18,7 +18,7 @@ title: All blags
         <div id="blag-list">
           <div class="blag-line">
             <span class="blag-date" title="{{ post.date | date_to_string: "ordinal", "US" }}">{{ post.date | date: "%Y-%m-%d" }}</span>
-            <a href="{{ post.url }}" class="blag-title">{{ post.title }}</a>
+            <span><a href="{{ post.url }}" class="blag-title">{{ post.title }}</a><span>
           </div>
         </div>
         {% endfor %}
@@ -64,7 +64,7 @@ title: All blags
         newEl.innerText = ' (' + Math.round(daysAgo) + ' days ago)';
         newEl.className = 'new-blag';
         newEl.style.color = 'rgb(255, ' + colorInterpolate(daysAgo).toString() + ', 0)';
-        element.parentNode.appendChild(newEl);
+        element.nextElementSibling.appendChild(newEl);
       }
     });
     </script>

@@ -6,6 +6,10 @@ html, body {
   font-size: 15px;
 }
 
+@media print, screen and (max-width: 480px) {
+  font-size: 12px;
+}
+
 body {
   font-family: 'Oxygen', Arial, sans-serif;
   /* @import url(https://fonts.googleapis.com/css?family=Roboto|Oxygen|PT+Mono); */
@@ -32,11 +36,23 @@ ul {
   padding-left: 15px;
 }
 
-#blag-list .blag-title {
-  font-size: 15px;
-}
 #blag-list .blag-line {
+  display:  flex;
   padding-bottom: 2px;
+}
+@media print, screen and (max-width: 480px) {
+  #blag-list .blag-line {
+    padding-bottom: 4px;
+  }
+}
+#blag-list .blag-date {
+  padding-top: 2px; /* Align with link in different font */
+  padding-right: 16px;
+}
+@media print, screen and (max-width: 480px) {
+  #blag-list .blag-date {
+    padding-right: 10px;
+  }
 }
 
 /* Blog post titles */
@@ -89,6 +105,7 @@ article img {
 
 .single-column {
   width: 600px;
+  padding-bottom: 75px;
 }
 
 .single-column header {
@@ -97,7 +114,6 @@ article img {
 
 .single-column .blag-date {
   display: inline-block;
-  width: 100px;
   font-family: 'PT Mono';
 }
 
