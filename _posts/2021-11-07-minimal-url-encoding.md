@@ -125,3 +125,17 @@ print(encode(int(uuid4()), base81_alphabet))
 # BdJoptB:Jxq2G]7PAe:mE
 # IVDEUIN;n=GYQE0W6Jdp
 ```
+
+### Notes
+
+- A normal UUIDv4 will have 6-bits that are always the same, taking the information to be encoded down from 128-bits to 122-bits.
+  This is not considered in the above writing.
+
+### Links
+
+- Two other interesting StackOverflow questions on UUIDs specifically: [1] and [2]  
+  Question 1 has an answer getting to a "base74" encoding, which in practice performs about the same my "base81".  
+  Question 2 has an answer that suggests using printable unicode characters, giving compression in text but not over-the-wire (which is actually fine for my usecase). One of the issues with that scheme is that users might get confused when they copy/paste the URL and get the encoded version.  
+
+[1]: https://stackoverflow.com/q/31297985/118608
+[2]: https://stackoverflow.com/q/39262193/118608
