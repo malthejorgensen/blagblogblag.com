@@ -3,7 +3,7 @@ layout: post
 title: Finding an AWS IAM user via User Id
 ---
 
-In the previous blog post I talked an AWS IAM User ID that I found in AWS S3 bucker policy.
+In the previous blog post I talked about an AWS IAM User ID that I found in AWS S3 bucket policy.
 This is a little follow-up on that.
 
 AWS IAM User IDs always start with `AIDA` and are
@@ -26,7 +26,7 @@ User ID by pressing "/" and then type in the user ID and press enter.
     
 If you have [jq] installed you can do:
 
-    aws iam list-users | jq '.Users[] | select(.UserId == "AIDAXYZABCDEF12345678")'
+    aws iam list-users | jq '.Users[] | select(.UserId == "AIDAXXXXXXXXXXXXXXXXX")'
 
 to get the user you're looking for.
     

@@ -1,3 +1,6 @@
+---
+title: Service workers are the worst
+---
 You can't serve your service worker via a CDN. You can't even serve it on a subdomain of your current domain.
 
 That means you can't use PDF.js via a CDN (at least not with the built in worker).[2]

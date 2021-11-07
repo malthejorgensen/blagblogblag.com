@@ -17,17 +17,19 @@ could have triggered the error at any point in time.
 AppFog has the add-on _Logentries_ for *real* logging. This give you a graph
 over the log events, and categorizes events and exceptions. But it is way too
 difficult to read and search the logs.
-So no go to <https://logentries.com> and on to better things.
+So no-go to Logentries and on to better things.
 
 I found the following suitable _Log-in-the-cloud_ solutions:
 
 * Loggly
 * Papertrail
 
-> (also
-> * Loggr.net
-> * Splunk
-> )
+Honorable mentions, but not quite for me:
+
+* Exceptional
+* Loggr.net
+* Splunk
+
 
 ### Papertrail
 Didn't show any newlines in my Python stacktraces, which makes them pretty
@@ -39,13 +41,13 @@ a single line.
 Loggly has a very cool interface and are very focused on searching and the value
 of the data that can be extracted from logs.
 
-#### Exceptional
+### Exceptional
 I also tried out [Exceptional](https://exceptional.io) which I liked a lot, but
 only does exceptions, not logs. Very easy to set up with Django and very
 intuitive interface.
 
 References:
 
-- [Chris Moyer's "The Great Search for syslog services](https://blog.coredumped.org/2011/12/great-search-for-syslog-services.html)
+- [Chris Moyer's "The Great Search for syslog services"](https://blog.coredumped.org/2011/12/great-search-for-syslog-services.html)
 - <https://bitmechanic.com/2012/01/06/centralized-logging-in-10-minutes.html>
  - I also had a [short conversation](https://mattdoesstuff.wordpress.com/2013/02/07/logging-and-application-performance-management-options/) with **mattdoesstuff**.
