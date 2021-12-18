@@ -5,7 +5,7 @@ I've been seeing that other people can get their shell to show the time a comman
 was run ([Bash], [zsh 1], [zsh 2]):
 
     ~ $ python mgmt_script.py                                                  10:45
-                                                                    This thing ──┘
+                                           This thing ────────>─────────>────────┘
 
 As an avid user and big fan of [fish], I naturally have been wanting to do the same.
 
