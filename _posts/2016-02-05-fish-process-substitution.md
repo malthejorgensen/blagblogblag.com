@@ -86,6 +86,12 @@ extra syntax, what can be done with a command :)
 the way it has to cleanup after file-closing it would probably not be able to be
 implemented as a separate command outside of fish)
 
+**Notes**
+The `&&` and `||` operators were added to fish in version [fish 3.0b1] (released December 11, 2018)
+for pragmatic reasons.
+
+[fish 3.0b1]: https://github.com/fish-shell/fish-shell/blob/master/CHANGELOG.rst#syntax-changes-and-new-commands-2
+
 **References**
 
 
