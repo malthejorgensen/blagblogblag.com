@@ -1,5 +1,5 @@
 ---
-title: Postgres roles are hard
+title: Credential rotation with Django and Postgres
 ---
 _Note that Postgres doesn't distuinguish between "users" and "roles".
 They are one and the same. I'll use the terms interchangibly._
@@ -34,7 +34,7 @@ You are connected to database "postgres" as user "malthe" via socket in "/tmp" a
 
 Let's create a test database.
 
-    postgres=# CREATE ROLE "bookstore_employees" NOLOGIN;
+    postgres=# CREATE ROLE "bookstore_owner" NOLOGIN;
     CREATE ROLE
     postgres=# CREATE DATABASE "bookstore";
     CREATE DATABASE
@@ -46,90 +46,6 @@ And switch to it (`\connect` or just `\c`)
 
     postgres=# \connect bookstore
     You are now connected to database "bookstore" as user "malthe".
-
-I have a couple of different employees in my bookstore, and as a security shark
-I of course know they shouldn't have the same credentials to the database.
-
-    postgres=# CREATE ROLE "susan" WITH PASSWORD 'abc123' LOGIN IN ROLE "bookstore_employees";
-    postgres=# CREATE ROLE "bobby" WITH PASSWORD 'def456' LOGIN IN ROLE "bookstore_employees";
-
-<!--
-    postgres=# GRANT "bookstore_employees" TO "susan";
-    GRANT ROLE
-    postgres=# GRANT "bookstore_employees" TO "bobby";
-    GRANT ROLE
--->
-
-Note I'm using `IN ROLE "bookstore_employees"` -- this used to be called `IN GROUP`.
-Postgres roles can also be used as [groups], where users can be members of that group.
-Since it's all just roles it ends up looking a bit funky.
-
-[groups]: https://www.postgresql.org/docs/14/sql-createrole.html
-
-My intention with this setup is that I can let `susan` and `bobby` do their
-work and create tables, rows, indexes etc. and go about their business.
-But of course I want them to be able to use and inspect eachother's work.
-We can't have silos in a three-person shop!
-
-However, it doesn't end up working as I intended (thinking both are in the same group `bookstore_employees`):
-
-    > psql -U susan bookstore
-
-    bookstore=> CREATE TABLE "books" (
-    bookstore(>   id SERIAL PRIMARY KEY,
-    bookstore(>   title character varying(2000) NOT NULL
-    bookstore(> );
-    CREATE TABLE
-
-    bookstore=> INSERT INTO "books" (title) VALUES ('Atra-Hasis'), ('Gilgamesh');
-    INSERT 0 2
-    bookstore=> SELECT * FROM "books";
-     id |   title
-    ----+------------
-      1 | Atra-Hasis
-      2 | Gilgamesh
-    (2 rows)
-
-    > psql -U bobby bookstore
-
-    bookstore=> SELECT * FROM "books";
-    ERROR:  permission denied for table books
-
-Well, there's a way to fix that. Every time an employee logs in we can ask them
-to execute `SET ROLE "bookstore_employees";`. That way they'll be creating things
-as the "group" and other employees will be able to access it.
-Did I mention they have to do this every time they log in?
-
-(Luckily, simple audit trails logs with `log_statement = "all"` and
-`log_line_prefix = "%u"` does show what you want here -- `susan`/`bobby` and
-not `bookstore_employees`)
-
-Well, to make the change permanent you can do
-
-    bookstore=# ALTER ROLE "susan" SET role="bookstore_employees":
-    ALTER ROLE
-
-    bookstore=# SELECT * FROM pg_user;
-       usename   | usesysid | usecreatedb | usesuper | userepl | usebypassrls |  passwd  | valuntil |                                     useconfig
-    -------------+----------+-------------+----------+---------+--------------+----------+----------+------------------------------------------------------------------------------------
-     malthe      |       10 | t           | t        | t       | t            | ******** |          |
-     postgres    |    16385 | f           | f        | f       | f            | ******** |          |
-     susan       |   452006 | f           | f        | f       | f            | ******** |          | {role=bookstore_employees}
-     bobby       |   452007 | f           | f        | f       | f            | ******** |          |
-    (4 rows)
-
-
-    $ psql -U susan bookstore
-    psql (14.0)
-    Type "help" for help.
-
-    bookstore=> SELECT CURRENT_USER, SESSION_USER;
-        current_user     | session_user
-    ---------------------+--------------
-     bookstore_employees | susan
-    (1 row)
-
-Yay!
 
 ### Enter credential rotations
 
@@ -217,9 +133,30 @@ Or -- you can change the default role for that role:
      bookstore_owner | bookstore_user_0001
 
 
-### Notes
-- `\c` / `\connect` will reset your role, and you'll have to run `SET ROLE <role>` again.
-- The opposite of `ALTER ROLE  susan SET role=bobby` is `ALTER ROLE susan RESET role`
+<!--
+
+psql -h 'eduflow-postgres-staging.cwfrbet8cw0x.eu-west-1.rds.amazonaws.com' -U eduflowuser-2020-11-04-5gkqdg eduflow                   23:20
+Password for user eduflowuser-2020-11-04-5gkqdg:
+psql (14.0, server 10.17)
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+
+eduflow=> SELECT CURRENT_USER, SESSION_USER;
+ current_user  |         session_user
+---------------+-------------------------------
+ eduflow_owner | eduflowuser-2020-11-04-5gkqdg
+
+eduflow=> SELECT * FROM pg_user;
+            usename            | usesysid | usecreatedb | usesuper | userepl | usebypassrls |  passwd  | valuntil |
+-------------------------------+----------+-------------+----------+---------+--------------+----------+----------+------------------------------------------------------------------
+ rdsadmin                      |       10 | t           | t        | t       | t            | ******** | infinity | {TimeZone=utc,log_statement=all,log_min_error_statement=debug5,lo
+ eduflowuser-2020-11-04-5gkqdg |    21137 | f           | f        | f       | f            | ******** |          | {role=eduflow_owner}
+ eduflowstaging                |    16393 | t           | f        | f       | f            | ******** | infinity |
+ rotater-temp-user-V80CWA      |    21111 | f           | f        | f       | f            | ******** |          |
+ eduflow_owner                 |    21132 | f           | f        | f       | f            | ******** |          |
+ rotater-temp-user-_rFWXg      |    21117 | f           | f        | f       | f            | ******** |          |
+
+-->
 
 ### Further reading
 
