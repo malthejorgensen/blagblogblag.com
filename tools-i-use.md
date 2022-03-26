@@ -6,6 +6,20 @@ permalink: /tools-I-use
 On this page I list a bunch of (developer) tools I enjoy using in my work and
 elsewhere.
 
+## Database viewers
+
+- TablePlus
+- Postico
+
+These are about the same price, but TablePlus offers more features.
+I just happened to purchase a license for Postico. It works very well.
+Could I make the choice again I'd probably just purchase TablePlus.
+
+### Redis
+
+- DBeaver
+- Valentina Studio
+
 ## Website monitoring (uptime)
 **webcron** is cheap, and sends texts (SMSs) when your website goes down. It
 even sends texts to Denmark where I live! This is nice if you run websites for
