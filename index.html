@@ -13,7 +13,14 @@ title: All blags
         <p class="blag-tagline">A small island in the vast internet ocean</p>
       </header>
       <div class="content">
-        <h3>Blog posts</h3>
+        <div class="menu">
+          <div class="menu-item active">Blog posts</div>
+          {% for page in site.pages %}
+          {% if page.layout and page.name != 'rss.xml' %}
+          <div class="menu-item"><a href="{{ page.url }}">{{ page.title }}</a></div>
+          {% endif %}
+          {% endfor %}
+        </div>
         <div id="blag-list">
         {% for post in site.posts %}
           <div class="blag-line">
@@ -22,15 +29,6 @@ title: All blags
           </div>
         {% endfor %}
         </div>
-        <h3 style="margin-top: 20px;">Projects and things</h3>
-        <ul>
-          <!--<li><a href="tools.html">Tools I use</a></li>-->
-          {% for page in site.pages %}
-          {% if page.layout and page.name != 'rss.xml' %}
-          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
       </div>
       <footer>
         <!-- <img class="me" src="https://www.gravatar.com/avatar/8de291e8f2ffc040736008eab50fe2e3.png" alt="Picture of me"> -->

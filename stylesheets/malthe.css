@@ -105,6 +105,31 @@ article img {
   font-size: 17px;
 }
 
+.menu {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.menu-item {
+  flex-grow: 1;
+  text-align: center;
+
+  font-size: 1.17em; /* insane browser default for <h3> */
+  font-weight: 700;
+  line-height: 1.1;
+  color: #494949;
+}
+.menu-item:first-of-type {
+  text-align: left;
+}
+.menu-item:last-of-type {
+  text-align: right;
+}
+.menu-item.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .single-column {
   width: 600px;
   padding-bottom: 75px;
