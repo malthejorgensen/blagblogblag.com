@@ -14,8 +14,11 @@ Yes yes, I'm old now and sd and rg exist, but they didn't back then!
 _repx was previously named prex, but has been renamed due to a pre-existing
 package in PyPI called prex._
 
-## janus
+## pqon ([link](https://github.com/malthejorgensen/pqon))
 A version of `jq` that I can understand.
+
+_pqon was previously named jason, but has been renamed due to a pre-existing
+package in PyPI called jason. pqon has also previously been mentioned as janus on this page._
 
 ## difftree ([link](https://github.com/malthejorgensen/difftree))
 Easily get a small overview of what changed between two folders.
