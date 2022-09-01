@@ -7,8 +7,11 @@ using `heroku run bash` take a look at the previous blog post
 [Running a script with large input on Heroku](/2020/08/04/running-a-script-with-large-input-on-heroku).
 For all other cases this method is easier._
 
-You don't want to wait for CI (e.g. integration tests can take a log time) or you just
-want to run some data analysis script that you don't want to commit to the repository.
+If you're anything like me, you occassionaly want to run a one-off job on Heroku with a bunch
+of code in a script that you've made locally on your machine.
+
+But you don't to commit it to the repo and then to wait for CI (e.g. integration tests can take a long time).
+Especially if it's a single-use data analysis script that you don't want to clutter up the repository.
 Good news! You don't have to -- Heroku allows piping into the `heroku run`-command:
 
 <aside>
@@ -35,10 +38,13 @@ hang forever.
 
 You can use this to upload new code to the temporary dyno (the code will only be available in that particular dyno)
 
-    > echo 'print(1 + 2 + 3 + 4)' | heroku run -a test-app 'cat > test.py; python test.py'
+    > cat my_script.py | heroku run -a test-app 'cat > my_script.py; python my_script.py'
     Running cat > test.py; python test.py on ⬢ test-app... up, run.6181 (Standard-1X)
-    print(1 + 2 + 3 + 4)
-    10
+    print('Hello from my_script.py')
+    Hello from my_script.py
+
+That's it! – just pipe the file into the `heroku run`-command, use `cat` to write
+it to a file on the dyno, and then run the file.
 
 ## Sending multiple files
 If your Heroku image has the `tar`-utility you can do:
@@ -122,7 +128,6 @@ Probably due to some buffering based on newlines inside the Heroku CLI or furthe
 ### Caveats
 - In order to pipe you need a tty, so `--no-tty` and similarly `run:detached` can't be used (e.g. for long-running scripts)
 - You can't regain control of stdin once you pipe into a process, so you can't do `cat file.txt | heroku run 'cat > file.text; bash'`
-- You can't send more than one file, unless you do some trickery What you can't do is 
 
 ### Notes
 - Usually `tar`-flags are passed without the `-` in front, e.g. `tar xzvf archive.tar.gz` however I felt it was more clear to
