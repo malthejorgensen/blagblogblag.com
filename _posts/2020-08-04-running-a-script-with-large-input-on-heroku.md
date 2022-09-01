@@ -2,6 +2,10 @@
 layout: post
 title: Running a script with large input on Heroku
 ---
+_Note: Take a look the newer blog post [Running a script with large input on Heroku (part 2)](/2022/06/21/running-a-script-with-large-input-on-heroku-part-2)
+the method described there is better in most cases -- unless you specifically need `heroku run:detached <command>` 
+or you want to run interactively (`heroku run bash`)._
+
 Running a script on Heroku is easy:
 
     heroku run -a <your app> python my_script.py
