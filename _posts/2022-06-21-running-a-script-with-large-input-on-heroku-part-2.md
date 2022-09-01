@@ -10,7 +10,7 @@ For all other cases this method is easier._
 If you're anything like me, you occassionaly want to run a one-off job on Heroku with a bunch
 of code in a script that you've made locally on your machine.
 
-But you don't to commit it to the repo and then to wait for CI (e.g. integration tests can take a long time).
+But you don't want to commit it to the repo and then to wait for CI (e.g. integration tests can take a long time).
 Especially if it's a single-use data analysis script that you don't want to clutter up the repository.
 Good news! You don't have to -- Heroku allows piping into the `heroku run`-command:
 
