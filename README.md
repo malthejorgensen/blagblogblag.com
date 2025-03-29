@@ -7,6 +7,20 @@ It uses the
 
 And is powered by [Jekyll](https://github.com/mojombo/jekyll).
 
+Install
+-------
+Run
+
+    bundle install
+
+
+Run / develop
+-------------
+Run
+
+    bundle exec jekyll serve -w --drafts
+
+
 Problems (and solutions)
 ------------------------
 I had problems with pages (not posts) not rendering as markdown: turns out you
