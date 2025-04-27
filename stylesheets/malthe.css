@@ -136,10 +136,6 @@ aside {
 .menu-item:last-of-type {
   text-align: right;
 }
-.menu-item.active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
 .menu-item.active a {
   color: black;
 }
