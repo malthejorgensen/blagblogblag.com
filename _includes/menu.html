@@ -1,0 +1,8 @@
+<div class="menu">
+  {% for nav_item in site.pages %}
+  {% if nav_item.name != 'rss.xml' %}
+  <div class="menu-item{% if page.url == nav_item.url %} active{% endif %}"><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></div>
+  {% endif %}
+  {% endfor %}
+</div>
+<hr>

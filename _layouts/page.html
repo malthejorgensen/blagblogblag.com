@@ -3,15 +3,15 @@
   <head>
     {% include html_head.html %}
   </head>
-  <body class="blag-post">
+  <body class="index">
     <div class="wrapper single-column">
       <header>
-        <a href="/" class="back-button">← Back</a>
-        <h1 class="blag-title"><a title="blagblogblag.com" href="/">blagblogblag.com</a></h1>
+        <h1><a class="blag-title" title="blagblogblag.com" href="/">blagblogblag.com</a></h1>
         <p class="blag-tagline">A small island in the vast internet ocean</p>
       </header>
-
       <div class="content">
+        {% include menu.html %}
+
         <h1 class="post-title">{{ page.title }}</h1>
         <small class="blag-date" title="{{ page.date | date_to_string: "ordinal", "US" }}">{{ page.date | date: "%Y-%m-%d" }}</small>
         <div class="blag-content">

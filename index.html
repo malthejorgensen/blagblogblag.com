@@ -1,5 +1,5 @@
 ---
-title: All blags
+title: Blog posts
 ---
 <!doctype html>
 <html>
@@ -13,14 +13,8 @@ title: All blags
         <p class="blag-tagline">A small island in the vast internet ocean</p>
       </header>
       <div class="content">
-        <div class="menu">
-          <div class="menu-item active">Blog posts</div>
-          {% for page in site.pages %}
-          {% if page.layout and page.name != 'rss.xml' %}
-          <div class="menu-item"><a href="{{ page.url }}">{{ page.title }}</a></div>
-          {% endif %}
-          {% endfor %}
-        </div>
+        {% include menu.html %}
+
         <div id="blag-list">
         {% for post in site.posts %}
           <div class="blag-line">

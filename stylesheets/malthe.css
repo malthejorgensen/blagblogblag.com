@@ -65,12 +65,6 @@ ul {
 h1 {
   margin-bottom: 0px;
 }
-.blag-post .blag-title {
-  font-size: 18px;
-}
-.blag-post .blag-tagline {
-  font-size: 10px;
-}
 .post-title {
   color:#222;
   line-height:1.1;
@@ -145,6 +139,9 @@ aside {
 .menu-item.active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+.menu-item.active a {
+  color: black;
 }
 
 .single-column {
