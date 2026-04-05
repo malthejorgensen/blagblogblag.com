@@ -62,7 +62,7 @@ Well, in the end I decided to go for it anyway and I was able to track my
 package via DHL on its 3-day journey from Hong Kong to Copenhagen (Denmark). I
 recieved the package 6 days after my Paypal payment.
 
-![Bosto PayPal vendor info](img/bosto-paypal.png)
+![Bosto PayPal vendor info](/img/bosto-paypal.png)
 
 The PayPal vendor information was kinda funny (you can see it on the left).
 Obviously Chinese symbols aren't allowed in email addresses and Chinese people

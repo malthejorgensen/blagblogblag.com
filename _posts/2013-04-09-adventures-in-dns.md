@@ -76,7 +76,7 @@ What you might wanna is to read up on:
 , which I found to be nice resources.
 
 ## Gandi.net "Expert mode"
-![Gandi.net Expert mode](img/gandi.net-expert-mode.png "Gandi.net Expert mode")
+![Gandi.net Expert mode](/img/gandi.net-expert-mode.png "Gandi.net Expert mode")
 On gandi.net, you can set _Edit mode_ to _"Expert"_ which lets you edit the zone
 file directly. This is actually the same as what you can do on QuickDNS.dk and
 pleen.dk, though I didn't know about zone files at that time. Furthermore on
