@@ -54,6 +54,8 @@ title: Blog posts
       return (numDays / MAX_DAYS) * 230;
     }
     document.querySelectorAll('.blag-date').forEach(function(element) {
+      // Disable for now
+      return;
       var now = new Date();
       var blagDate = Date.parse(element.innerText);
       var daysAgo = (now - blagDate) / (24 * 60 * 60 * 1000);
