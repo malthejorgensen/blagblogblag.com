@@ -23,8 +23,8 @@ In order to use Blender as a video editor the first thing you need to do, is to
 switch the window layout to "Video Editing". (There's a dropdown in the top menu
 bar)
 
-<a href="img/blender-screenshot-full.png">
-<img alt="Screenshot of Blenders window layout menu" src="img/blender-screenshot-cropped.png" style="display:block; float:none">
+<a href="/img/blender-screenshot-full.png">
+<img alt="Screenshot of Blenders window layout menu" src="/img/blender-screenshot-cropped.png" style="display:block; float:none">
 </a>
 
 In this view you should be able to see the timeline at the bottom of the window.
