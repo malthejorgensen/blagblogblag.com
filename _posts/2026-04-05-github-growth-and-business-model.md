@@ -69,7 +69,7 @@ very short timeframe.
 
 Okay, and what does all that have to do with their business model?
 
-The OG business model
+The business model v1
 ---------------------
 
 Historically, Github has basically been a tiered freemium model – and at the
@@ -98,8 +98,8 @@ They don’t need a 100 person dev team to build Okta or Hubspot anymore<a name=
 So, the core Github business model has died. *That* business model is no
 longer viable.
 
-The business model REDUX
-------------------------
+The business model v2
+---------------------
 
 The new business model foregoes all that. Github is now a data play. Ingest
 and store as much code as you can, and have it be training data for models.
