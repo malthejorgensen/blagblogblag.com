@@ -115,9 +115,20 @@ valuable data if all the new code is vibecode anyways? You can’t teach a
 model to be better at coding by having ingest code it produced itself. Even
 if you could, you wouldn’t need to go through Github<a name="ref-3" href="#footnote-3"><sup>3</sup></a>.
 
-I think that’s a fairly sound business strategy. I don’t like – if you’re not
-paying, you’re product – but definitely is a sound business strategy
-(Google, Facebook, …).
+I think that’s a fairly sound business strategy. 
+
+I'm quite tired of the trope "if you’re not paying, you are the product". But
+it does apply here -- and while I'm not very afraid of my data floating
+around out there (on Github or on the internet at large) nor afraid of public
+internet data being used for AI training -- I am quite saddened to know that
+there's now a disconnect between what I'm paying for and what actually drives
+value for the business, in this case Github. The ideal business model really
+is -- you pay for the value the business creates. It's perfect incentive
+alignment between customer and provider.
+
+A toast to a now dead business model, and a toast to the sweating SREs 
+trying to keep Github afloat.
+
 
 Footnotes
 ---------
