@@ -7,7 +7,7 @@ But people are misunderstanding what’s going on. Blaming it on the Microsoft
 takeover or on Github letting go of key staff members. That may be part of
 it. But I’d say they’re sideshows to the main act.
 
-[it's not great]: https://damrnelson.github.io/github-historical-uptime/
+[it's not great]: https://mrshu.github.io/github-statuses/
 
 Let me explain. Below are recent plots of growth in key numbers from Railway and Render.
 
