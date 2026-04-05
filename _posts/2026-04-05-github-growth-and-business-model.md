@@ -159,4 +159,6 @@ reasonable code. Which could make it just slightly higher “alpha” than the
 raw code coming out of an LLM. In any case, the “alpha” would be very low,
 and it would probably be best to filter on certain repositories — e.g.
 selecting ones with lots of activity from many people — signaling an actually
-functioning project that produces value to those people.
+functioning project that produces value to those people.  
+And then of course Apple had to go and show that **it is possible** to
+have the snake eat its own tail while I was writing this blog post <https://arxiv.org/abs/2604.01193>.
