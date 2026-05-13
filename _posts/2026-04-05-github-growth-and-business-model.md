@@ -129,6 +129,16 @@ alignment between customer and provider.
 A toast to a now dead business model, and a toast to the sweating SREs 
 trying to keep Github afloat.
 
+Update (May 14th 2026)
+----------------------
+About 20 days after writing this, Github actually posted [plots of their actual growth on their blog](https://github.blog/news-insights/company-news/an-update-on-github-availability/).
+Nothing surprising. Well, perhaps one thing -- the commits trend doesn't look as bad as I expected.
+I'd guess that's because with LLMs we tend to get these larger one-off commits,
+rather than the more gradual, human "commit-as-you-go" approach.
+
+<img style="height: 240px" alt="Railway's growth" src="/img/2026-04-05-github-growth-and-business-model/record-accelleration-1920x1080.webp">
+
+
 
 Footnotes
 ---------
